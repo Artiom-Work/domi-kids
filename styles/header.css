@@ -1,0 +1,141 @@
+.header {
+	position: relative;
+	margin: 0 auto;
+	max-width: 1280px;
+	min-height: 797px;
+}
+
+.header__top-wrp {
+	max-width: 1280px;
+	width: 100%;
+	min-height: 140px;
+	border-radius: 0px 0px 30px 30px;
+	background: var(--background-color-2);
+}
+
+.header__top {
+	padding: 12px 21px;
+	border-radius: 0px 0px 30px 30px;
+	background: url(../images/header/top-header-background.png) no-repeat top center / cover;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 31px;
+}
+
+.header__info-wrapper {
+	max-width: 888px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo,
+.logo__link {
+	width: 89px;
+	height: 66px;
+}
+
+.info__how-to-find {
+	max-width: 158px;
+	width: 100%;
+}
+
+.info__phone,
+.info__phone .phone-link {
+	max-width: 158px;
+	width: 100%;
+}
+
+.phone-link span {
+	display: block;
+	position: relative;
+	font-family: var(--title-font-family-1), sans-serif;
+	font-size: 20px;
+	color: var(--title-text-color);
+	z-index: 0;
+}
+
+.phone-link span::after {
+	content: "";
+	width: 166px;
+	height: 25px;
+	background: url(../images/header/background-text-phone.svg) no-repeat center / cover;
+	position: absolute;
+	left: -5px;
+	top: 0;
+	z-index: -1;
+}
+
+.header__social-wrapper {
+	margin: 0 0 0 19px;
+}
+
+.menu {
+	padding: 15px 27px 18px 33px;
+	max-width: 1280px;
+	width: 100%;
+	min-height: 50px;
+}
+
+.menu-list {
+	max-width: 1220px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 10px;
+}
+
+.menu-link {
+	font-size: 14px;
+	text-decoration: underline;
+}
+
+/* ====mobile-menu==== */
+.mobile-menu {
+	display: none;
+}
+
+/* ====END-mobile-menu==== */
+.header__promo-wrapper {
+	position: absolute;
+	left: 33px;
+	top: 258px;
+	max-width: 360px;
+	width: 100%;
+	min-height: 387px;
+	background: url(../images/header/promo-background.png);
+	border-radius: 30px;
+}
+
+.header__promo {}
+
+.header__promo-title,
+.header__promo-subtitle {
+	font-family: var(--title-font-family-1), sans-serif;
+	color: var(--title-text-color);
+}
+
+.header__promo-title {
+	max-width: 270px;
+	width: 100%;
+	min-height: 76px;
+	font-size: 48px;
+	font-weight: 400;
+	line-height: 42px;
+
+}
+
+.header__promo-subtitle {}
+
+.header__promo-list {}
+
+.header__promo-item {}
+
+.header__promo-item-txt {}
+
+.button {}
+
+.calc-price-button {}
