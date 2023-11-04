@@ -118,23 +118,20 @@
 	top: -58px;
 }
 
-.header__promo-title,
+.header__promo-title {
+	position: relative;
+	max-width: 270px;
+	min-height: 76px;
+	line-height: 42px;
+	z-index: 0;
+	margin-bottom: 12px;
+}
+
 .header__promo-subtitle {
 	font-family: var(--title-font-family-1), sans-serif;
 	color: var(--title-text-color);
 }
 
-.header__promo-title {
-	position: relative;
-	max-width: 270px;
-	width: 100%;
-	min-height: 76px;
-	font-size: 48px;
-	font-weight: 400;
-	line-height: 42px;
-	z-index: 0;
-	margin-bottom: 12px;
-}
 
 .header__promo-title::after {
 	position: absolute;
