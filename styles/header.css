@@ -24,11 +24,11 @@
 }
 
 .header__info-wrapper {
-	max-width: 888px;
+	max-width: 894px;
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-start;
 }
 
 .logo,
@@ -69,11 +69,11 @@
 }
 
 .header__social-wrapper {
-	margin: 0 0 0 19px;
+	margin: 0 0 4px 23px;
 }
 
 .menu {
-	padding: 15px 27px 18px 33px;
+	padding: 16px 27px 18px 33px;
 	max-width: 1280px;
 	width: 100%;
 	min-height: 50px;
@@ -85,6 +85,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	flex-wrap: wrap;
 	gap: 10px;
 }
 
@@ -101,6 +102,8 @@
 /* ====END-mobile-menu==== */
 .header__promo-wrapper {
 	position: absolute;
+	padding: 0 20px 50px;
+	box-sizing: border-box;
 	left: 33px;
 	top: 258px;
 	max-width: 360px;
@@ -110,7 +113,10 @@
 	border-radius: 30px;
 }
 
-.header__promo {}
+.header__promo {
+	position: absolute;
+	top: -58px;
+}
 
 .header__promo-title,
 .header__promo-subtitle {
@@ -119,23 +125,79 @@
 }
 
 .header__promo-title {
+	position: relative;
 	max-width: 270px;
 	width: 100%;
 	min-height: 76px;
 	font-size: 48px;
 	font-weight: 400;
 	line-height: 42px;
-
+	z-index: 0;
+	margin-bottom: 12px;
 }
 
-.header__promo-subtitle {}
+.header__promo-title::after {
+	position: absolute;
+	content: "";
+	width: 278px;
+	height: 94px;
+	background: url(../images/header/background-text-happy-birthday.svg) no-repeat center / cover;
+	left: -5px;
+	top: 0;
+	z-index: -1;
+}
 
-.header__promo-list {}
+.header__promo-subtitle {
+	position: relative;
+	max-width: 310px;
+	width: 100%;
+	min-height: 63px;
+	font-size: 20px;
+	line-height: 23px;
+	z-index: 0;
+	margin-bottom: 13px;
+}
 
-.header__promo-item {}
+.header__promo-subtitle::after {
+	position: absolute;
+	content: "";
+	width: 318px;
+	height: 79px;
+	background: url(../images/header/background-text-happy-birthday-subtitle.svg) no-repeat center / cover;
+	left: -5px;
+	top: -5px;
+	z-index: -1;
+}
 
-.header__promo-item-txt {}
+.header__promo-list {
+	max-width: 289px;
+	width: 100%;
+	padding: 0 0 0 27px;
+	box-sizing: border-box;
+	margin: 0 0 32px 0;
+}
 
-.button {}
+.header__promo-item:not(li:last-of-type) {
+	margin: 0 0 8px 0;
+}
 
-.calc-price-button {}
+.header__promo-item {
+	position: relative;
+	min-height: 15px;
+}
+
+.header__promo-item::before {
+	position: absolute;
+	content: "";
+	width: 15px;
+	height: 15px;
+	background: url(../images/header/list-style-point-1.svg) no-repeat center / cover;
+	left: -27px;
+	top: -1px;
+}
+
+.calc-price-button {
+	display: block;
+	margin: 0 auto;
+	padding: 0 67px;
+}
