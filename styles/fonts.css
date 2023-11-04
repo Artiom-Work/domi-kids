@@ -1,0 +1,22 @@
+@font-face {
+	font-family: 'Borsok';
+	src: url('../fonts/borsok/borsok-eot.eot');
+	src: local('Borsok'), local('borsok'),
+		url('../fonts/borsok/borsok-eot?#iefix') format('embedded-opentype'),
+		url('../fonts/borsok/borsok-woff2.woff2') format('woff2'),
+		url('../fonts/borsok/borsok-woff.woff') format('woff'),
+		url('../fonts/borsok/borsok-ttf.ttf') format('truetype');
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Museo Sans Cyrl';
+	src: url('../fonts/museo-sans/MuseoSansCyrl-500.eot');
+	src: local('Museo Sans Cyrl'), local('Museo-Sans-Cyrl'), local('museo-sans-cyrl'),
+		url('../fonts/museo-sans/MuseoSansCyrl-500.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/museo-sans/MuseoSansCyrl-500-woff2.woff2') format('woff2'),
+		url('../fonts/museo-sans/MuseoSansCyrl-500.woff') format('woff'),
+		url('../fonts/museo-sans/MuseoSansCyrl-500.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
