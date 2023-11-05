@@ -5,6 +5,7 @@
 @import "variables.css";
 @import "header.css";
 @import "event-description.css";
+@import "view-studio.css";
 
 body {
 	background: linear-gradient(to right, rgba(255, 255, 137, 1) 0%, rgba(54, 244, 216, 1) 100%);
