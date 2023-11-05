@@ -80,3 +80,30 @@ a {
 .social-item:nth-child(3) .social-link {
 	background: url(../images/whatsapp-icon.svg) no-repeat center / cover;
 }
+
+
+
+@media(max-width:1280px) and (min-width:768px) {
+	.view-studio {
+		min-height: calc(600px + (1000 - 600) * ((100vw - 768px) / (1280 - 768)));
+	}
+
+	.view-studio::before {
+		min-height: calc(600px + (1000 - 600) * ((100vw - 768px) / (1280 - 768)));
+	}
+
+	.view-studio__info-wrapper {
+		margin: 0 0 calc(20px + (70 - 20) * ((100vw - 768px) / (1280 - 768))) 0;
+	}
+
+	.slider-view-studio {
+		margin: 0 0 calc(20px + (83 - 20) * ((100vw - 768px) / (1280 - 768))) 0;
+	}
+
+	/* width: calc(20px + (83 - 20) * ((100vw - 768px) / (1280 - 768))); */
+	/* 37 - максимальная ширина картинок кнопок.  */
+	/* 20, 20px - минимальная ширина картинок кнопок. */
+	/* 815px - ширина при которой начинает уменьшаться слайдер */
+	/* 320, 320px - минимальная ширина экрана до которого будет происходить уменьшение  */
+
+}

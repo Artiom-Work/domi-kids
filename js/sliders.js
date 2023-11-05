@@ -34,4 +34,6 @@ function switchPrevSlide() {
 function createRollSlider() {
 	sliderLine.style.transform = `translateX(${-sliderCount * sliderWidth}px)`;
 }
-console.log(sliderImages);
+setInterval(() => {
+	switchNextSlide()
+}, 5000);
