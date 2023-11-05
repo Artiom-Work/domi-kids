@@ -4,6 +4,7 @@
 @import "animation-hover.css";
 @import "variables.css";
 @import "header.css";
+@import "event-description.css";
 
 body {
 	background: linear-gradient(to right, rgba(255, 255, 137, 1) 0%, rgba(54, 244, 216, 1) 100%);
@@ -30,7 +31,6 @@ a {
 	font-size: 48px;
 	font-weight: 400;
 	width: 100%;
-
 }
 
 .button {

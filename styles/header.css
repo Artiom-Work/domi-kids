@@ -1,8 +1,9 @@
 .header {
 	position: relative;
-	margin: 0 auto;
+	margin: 0 auto -34px;
 	max-width: 1280px;
 	min-height: 797px;
+	z-index: -2;
 }
 
 .header__top-wrp {
@@ -122,16 +123,10 @@
 	position: relative;
 	max-width: 270px;
 	min-height: 76px;
-	line-height: 42px;
+	line-height: 44px;
 	z-index: 0;
-	margin-bottom: 12px;
+	margin-bottom: 7px;
 }
-
-.header__promo-subtitle {
-	font-family: var(--title-font-family-1), sans-serif;
-	color: var(--title-text-color);
-}
-
 
 .header__promo-title::after {
 	position: absolute;
@@ -139,8 +134,8 @@
 	width: 278px;
 	height: 94px;
 	background: url(../images/header/background-text-happy-birthday.svg) no-repeat center / cover;
-	left: -5px;
-	top: 0;
+	left: -4px;
+	top: 2px;
 	z-index: -1;
 }
 
@@ -149,10 +144,12 @@
 	max-width: 310px;
 	width: 100%;
 	min-height: 63px;
+	font-family: var(--title-font-family-1), sans-serif;
+	color: var(--title-text-color);
 	font-size: 20px;
-	line-height: 23px;
+	line-height: 25px;
 	z-index: 0;
-	margin-bottom: 13px;
+	margin-bottom: 11px;
 }
 
 .header__promo-subtitle::after {
@@ -161,8 +158,8 @@
 	width: 318px;
 	height: 79px;
 	background: url(../images/header/background-text-happy-birthday-subtitle.svg) no-repeat center / cover;
-	left: -5px;
-	top: -5px;
+	left: -4px;
+	top: -4px;
 	z-index: -1;
 }
 
@@ -175,7 +172,7 @@
 }
 
 .header__promo-item:not(li:last-of-type) {
-	margin: 0 0 8px 0;
+	margin: 0 0 7px 0;
 }
 
 .header__promo-item {
@@ -190,7 +187,7 @@
 	height: 15px;
 	background: url(../images/header/list-style-point-1.svg) no-repeat center / cover;
 	left: -27px;
-	top: -1px;
+	top: -2px;
 }
 
 .calc-price-button {
