@@ -26,7 +26,8 @@ a {
 }
 
 .header__promo-title,
-.event-description__title {
+.event-description__title,
+.view-studio__title {
 	font-family: var(--title-font-family-1), sans-serif;
 	color: var(--title-text-color);
 	font-size: 48px;
