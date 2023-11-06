@@ -7,6 +7,7 @@
 @import "event-description.css";
 @import "view-studio.css";
 @import "character-samples.css";
+@import "studio-services.css";
 
 body {
 	background: linear-gradient(to right, rgba(255, 255, 137, 1) 0%, rgba(54, 244, 216, 1) 100%);
@@ -29,7 +30,8 @@ a {
 .header__promo-title,
 .event-description__title,
 .view-studio__title,
-.character-samples__title {
+.character-samples__title,
+.studio-services__title {
 	font-family: var(--title-font-family-1), sans-serif;
 	color: var(--title-text-color);
 	font-size: 48px;
