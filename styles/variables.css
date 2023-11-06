@@ -13,6 +13,8 @@
 	--background-color-4: #00CEB7;
 	--background-color-5: #FFFFC2;
 	--background-color-6: #90FFF5;
+	--background-color-7: linear-gradient(180deg, #b4fff7 0%, rgba(180, 255, 247, 0) 100%);
+	;
 	--background-color-button-1: #fe4388;
 	/* ======= */
 }
