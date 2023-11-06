@@ -5,10 +5,9 @@
 }
 
 .event-description.center {
-	margin: 0 auto -53px;
+	margin: 0 auto -25px;
 	padding: 100px 50px;
 	position: relative;
-	z-index: -2;
 }
 
 .event-description__title {
@@ -16,7 +15,6 @@
 	position: absolute;
 	left: 54px;
 	top: -23px;
-	line-height: 43px;
 	z-index: 0;
 }
 
@@ -48,6 +46,7 @@
 	max-width: 310px;
 	width: 100%;
 	min-height: 160px;
+	z-index: 0;
 }
 
 .event-description__item::before {
@@ -70,7 +69,7 @@
 	background: var(--background-color-5);
 	left: 45px;
 	top: 0px;
-	z-index: -1;
+	z-index: -2;
 }
 
 .event-description__name {

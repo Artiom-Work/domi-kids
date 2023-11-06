@@ -1,0 +1,115 @@
+.character-samples {
+	position: relative;
+	width: 100%;
+	min-height: 1015px;
+	background: var(--background-color-1);
+}
+
+.character-samples::before {
+	content: '';
+	position: absolute;
+	max-width: 1280px;
+	width: 100%;
+	height: 25px;
+	background: var(--background-color-1);
+	top: -25px;
+	left: 0;
+	z-index: -1;
+}
+
+.character-samples.center {
+	padding: 35px 50px;
+}
+
+.character-samples__info-wrapper {
+	width: 100%;
+	min-height: 120px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+	gap: 82px;
+	margin: 0 0 72px 0;
+}
+
+.character-samples__title {
+	position: relative;
+	max-width: 324px;
+	left: 2px;
+	z-index: 0;
+}
+
+.character-samples__title::after {
+	position: absolute;
+	content: "";
+	width: 332px;
+	height: 134px;
+	background: url(../images/character-samples/background-character-samples-title.svg) no-repeat center / cover;
+	left: -4px;
+	top: 2.5px;
+	z-index: -1;
+}
+
+.character-samples__txt {
+	position: relative;
+	max-width: 317px;
+	width: 100%;
+	line-height: 14px;
+	margin: 0 0 2px 0;
+	z-index: 0;
+}
+
+.character-samples__txt::after {
+	position: absolute;
+	content: "";
+	width: 160px;
+	height: 160px;
+	border-radius: 100%;
+	top: -82px;
+	left: -51px;
+	background-color: var(--background-color-6);
+	z-index: -1;
+}
+
+/* ====slider==== */
+.slider-character-samples {
+	margin: 0 0 82px 0;
+	position: relative;
+	max-width: 1180px;
+	overflow: hidden;
+}
+
+.slider-character-samples__line {
+	display: flex;
+	align-items: center;
+	transition: all ease 1s;
+}
+
+.slider-character-samples__btn-prev,
+.slider-character-samples__btn-next {
+	position: absolute;
+	top: 49.3%;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+.slider-character-samples__btn-prev {
+	left: 0.2%;
+	transform: translateY(-50%) rotate(-90deg);
+}
+
+.slider-character-samples__btn-next {
+	right: 0.2%;
+	transform: translateY(-50%) rotate(90deg);
+}
+
+.slider-character-samples__btn-next img,
+.slider-character-samples__btn-prev img {
+	width: 70px;
+}
+
+.slider-character-samples__image {
+	border-radius: 30px;
+}
+
+/* ============= */
