@@ -101,7 +101,7 @@ a {
 	}
 
 	.character-samples {
-		min-height: calc(700px + (1015 - 700) * ((100vw - 768px) / (1280 - 768)));
+		min-height: calc(700px + (956 - 600) * ((100vw - 768px) / (1280 - 768)));
 	}
 
 	/* width: calc(20px + (83 - 20) * ((100vw - 768px) / (1280 - 768))); */

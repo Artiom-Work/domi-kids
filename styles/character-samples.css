@@ -1,7 +1,7 @@
 .character-samples {
 	position: relative;
 	width: 100%;
-	min-height: 1015px;
+	min-height: 956px;
 	background: var(--background-color-1);
 }
 
@@ -18,7 +18,7 @@
 }
 
 .character-samples.center {
-	padding: 35px 50px;
+	padding: 35px 50px 0;
 }
 
 .character-samples__info-wrapper {
@@ -72,7 +72,7 @@
 
 /* ====slider==== */
 .slider-character-samples {
-	margin: 0 0 82px 0;
+	margin: 0 0 88px 0;
 	position: relative;
 	max-width: 1180px;
 	overflow: hidden;
