@@ -5,8 +5,8 @@
 	/* ======= */
 	/* colors */
 	--text-color: #000;
+	--text-color-2: #fff;
 	--title-text-color: #00907F;
-	--button-text-color-1: #fff;
 	--background-color-1: #36F4D8;
 	--background-color-2: #F4FD90;
 	--background-color-3: #FFFF89;
@@ -15,6 +15,8 @@
 	--background-color-6: #90FFF5;
 	--background-color-7: linear-gradient(180deg, #b4fff7 0%, rgba(180, 255, 247, 0) 100%);
 	;
+	--background-color-8: #0086F2;
+	--background-color-9: #34A1FA;
 	--background-color-button-1: #fe4388;
 	/* ======= */
 }
