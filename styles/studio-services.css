@@ -5,7 +5,7 @@
 }
 
 .studio-services.center {
-	padding: 29px 50px 120px;
+	padding: 29px 50px 145px;
 }
 
 .studio-services__title-wrapper {
@@ -15,6 +15,7 @@
 	min-height: 235px;
 	padding: 45px 0 60px 4px;
 	box-sizing: border-box;
+	margin: 0 0 10px 0;
 }
 
 .studio-services__title-wrapper::before {

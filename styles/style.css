@@ -8,6 +8,7 @@
 @import "view-studio.css";
 @import "character-samples.css";
 @import "studio-services.css";
+@import "example-photos.css";
 
 body {
 	background: linear-gradient(to right, rgba(255, 255, 137, 1) 0%, rgba(54, 244, 216, 1) 100%);
