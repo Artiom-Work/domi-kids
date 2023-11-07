@@ -47,9 +47,9 @@ a {
 	display: block;
 	font-family: var(--title-font-family-1), sans-serif;
 	font-size: 20px;
-	color: var(--button-text-color-1);
+	color: var(--text-color-2);
 	text-align: center;
-	background-color: var(--text-color-2);
+	background-color: var(--background-color-button-1);
 	border-radius: 100px;
 	width: 258px;
 	height: 70px;
@@ -124,7 +124,6 @@ a {
 	/* 815px - ширина при которой начинает уменьшаться слайдер */
 	/* 320, 320px - минимальная ширина экрана до которого будет происходить уменьшение  */
 	.studio-services__list {
-
 		row-gap: 65px;
 		column-gap: 10px;
 		display: flex;
@@ -132,6 +131,4 @@ a {
 		justify-content: space-evenly;
 		align-items: flex-start;
 	}
-
-
 }
