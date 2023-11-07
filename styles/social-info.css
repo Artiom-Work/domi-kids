@@ -4,7 +4,7 @@
 	width: 100%;
 	min-height: 370px;
 	background: var(--background-color-8);
-	padding: 76px 0 139px;
+	padding: 76px 50px 139px;
 	box-sizing: border-box;
 	margin: 0 auto;
 }
@@ -41,6 +41,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-end;
+	gap: 10px;
 }
 
 .social-info__text-block {
