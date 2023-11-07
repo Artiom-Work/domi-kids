@@ -1,0 +1,112 @@
+.example-photos {
+	width: 100%;
+	min-height: 943px;
+}
+
+.example-photos.center {
+	position: relative;
+	border-radius: 30px;
+	background: url(../images/background-bables.png) no-repeat center / cover;
+	z-index: 0;
+}
+
+.example-photos__info-wrapper {
+	width: 100%;
+	min-height: 90px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 30px;
+	margin: 0 0 25px 0;
+}
+
+.example-photos__title {
+	position: relative;
+	max-width: 204px;
+	top: -28px;
+	left: 3px;
+	z-index: 0;
+}
+
+.example-photos__title::after {
+	position: absolute;
+	content: "";
+	width: 225px;
+	height: 90px;
+	background: url(../images/example-photos/background-title-example-photo.svg) no-repeat center / cover;
+	left: -4px;
+	top: 3px;
+	z-index: -1;
+}
+
+.example-photos__txt {
+	position: relative;
+	top: -23px;
+	font-family: var(--title-font-family-1), sans-serif;
+	color: var(--title-text-color);
+	max-width: 273px;
+	width: 100%;
+	font-size: 20px;
+	line-height: 25px;
+	font-weight: 400;
+	z-index: 0;
+}
+
+.example-photos__txt::after {
+	position: absolute;
+	content: "";
+	width: 278px;
+	height: 77px;
+	background: url(../images/example-photos/background-subtitle-example-photo.svg) no-repeat center / cover;
+	left: -5px;
+	top: 1px;
+	z-index: -1;
+}
+
+/* ====slider==== */
+.slider-example-photos {
+	margin: 0 0 53px 0;
+	position: relative;
+	max-width: 1180px;
+	overflow: hidden;
+	z-index: 0;
+}
+
+.slider-example-photos__line {
+	display: flex;
+	align-items: center;
+	transition: all ease 1s;
+}
+
+.slider-example-photos__btn-prev,
+.slider-example-photos__btn-next {
+	position: absolute;
+	top: 49.3%;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+.slider-example-photos__btn-prev {
+	left: 0.2%;
+	transform: translateY(-50%) rotate(-90deg);
+}
+
+.slider-example-photos__btn-next {
+	right: 0.2%;
+	transform: translateY(-50%) rotate(90deg);
+}
+
+.slider-example-photos__btn-next img,
+.slider-example-photos__btn-prev img {
+	width: 70px;
+}
+
+.slider-example-photos__image {
+	border-radius: 30px;
+}
+
+/* ============= */
+.example-photos__button {
+	margin: 0 auto;
+}

@@ -32,7 +32,8 @@ a {
 .event-description__title,
 .view-studio__title,
 .character-samples__title,
-.studio-services__title {
+.studio-services__title,
+.example-photos__title {
 	font-family: var(--title-font-family-1), sans-serif;
 	color: var(--title-text-color);
 	font-size: 48px;
@@ -42,6 +43,7 @@ a {
 }
 
 .button {
+	display: block;
 	font-family: var(--title-font-family-1), sans-serif;
 	font-size: 20px;
 	color: var(--button-text-color-1);
@@ -105,6 +107,14 @@ a {
 
 	.character-samples {
 		min-height: calc(700px + (956 - 600) * ((100vw - 768px) / (1280 - 768)));
+	}
+
+	.example-photos {
+		min-height: calc(600px + (943 - 600) * ((100vw - 768px) / (1280 - 768)));
+	}
+
+	.slider-example-photos {
+		margin: 0 0 calc(20px + (53 - 20) * ((100vw - 768px) / (1280 - 768))) 0;
 	}
 
 	/* width: calc(20px + (83 - 20) * ((100vw - 768px) / (1280 - 768))); */

@@ -1,5 +1,4 @@
 .view-studio {
-	position: relative;
 	width: 100%;
 	min-height: 995px;
 }
@@ -93,7 +92,6 @@
 
 /* ============== */
 .view-studio__button {
-	display: block;
 	margin: 0 auto;
 	padding: 0 33px;
 }
