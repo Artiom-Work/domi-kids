@@ -61,11 +61,11 @@
 .studio-services__list {
 	max-width: 1181px;
 	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
+	display: grid;
+	grid-template-columns: repeat(3, minmax(360px, 1fr));
+	grid-template-rows: repeat(2, 460px) 1fr;
 	row-gap: 65px;
-	justify-content: space-between;
-	align-items: start;
+	column-gap: 50px;
 }
 
 .service-card-wrapper {
