@@ -11,6 +11,7 @@
 @import "example-photos.css";
 @import "social-info.css";
 @import "reviews.css";
+@import "event-birthday.css";
 
 body {
 	background: linear-gradient(to right, rgba(255, 255, 137, 1) 0%, rgba(54, 244, 216, 1) 100%);
@@ -27,7 +28,7 @@ a {
 	max-width: 1280px;
 	padding: 0 50px;
 	margin: 0 auto;
-	/* outline: 1px solid red; */
+	outline: 1px solid red;
 }
 
 .header__promo-title,
