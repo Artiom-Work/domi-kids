@@ -1,0 +1,128 @@
+.event-birthday.center {
+	max-width: 1280px;
+	width: 100%;
+	min-height: 544px;
+	padding: 60px 50px 57px;
+	box-sizing: border-box;
+	border-radius: 30px;
+	background: url(../images/background-bables.png) no-repeat center/ cover;
+}
+
+.event-birthday__container {
+	max-width: 1011px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.event-birthday__info {
+	max-width: 640px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	outline: 1px solid red;
+}
+
+.event-birthday__title-wrapper {
+	max-width: 279px;
+	width: 100%;
+	outline: 1px solid blue;
+}
+
+.event-birthday__title {
+	max-width: 279px;
+	position: relative;
+	z-index: 0;
+	line-height: 42px;
+	margin: 0 0 7.5px 0;
+}
+
+.event-birthday__title::after {
+	position: absolute;
+	content: "";
+	width: 286px;
+	height: 89px;
+	background: url(../images/event-birthday/event-birthday-background-title.svg) no-repeat center / contain;
+	left: -4px;
+	top: 4px;
+	z-index: -1;
+}
+
+.event-birthday__subtitle {
+	position: relative;
+	max-width: 195px;
+	width: 100%;
+	font-family: var(--title-font-family-1), sans-serif;
+	color: var(--title-text-color);
+	font-size: 20px;
+	line-height: 25px;
+	z-index: 0;
+}
+
+.event-birthday__subtitle::after {
+	position: absolute;
+	content: "";
+	width: 195px;
+	height: 127px;
+	background: url(../images/event-birthday/event-birthday-background-subtitle.svg) no-repeat center / contain;
+	left: -4px;
+	top: 0;
+	z-index: -1;
+}
+
+.event-birthday__subtitle span {
+	color: var(--background-color-button-1);
+}
+
+.event-birthday__images-wrp {
+	margin: 2px 0 0 0;
+	position: relative;
+	max-width: 300px;
+	width: 100%;
+	height: 295px;
+}
+
+.event-birthday__image:first-child {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 1;
+}
+
+.event-birthday__image:last-child {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+/* =====form===== */
+.event-birthday__form-wrapper {
+	outline: 1px solid black;
+	max-width: 311px;
+	width: 100%;
+	min-height: 427px;
+}
+
+.event-birthday__form .form__input:last-of-type {
+	margin-bottom: 30px !important;
+}
+
+/* input[id="date-of-event-birthday"]::-webkit-inner-spin-button,
+input[id="date-of-event-birthday"]::-webkit-calendar-picker-indicator {
+	display: none;
+}
+
+input[id="date-of-event-birthday"] {
+	color: transparent;
+} */
+
+.event-birthday__form {}
+
+
+.event-birthday__btn {
+	padding: 12px 70px 14px;
+}
+
+/* ========== */
