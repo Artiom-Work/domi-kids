@@ -22,13 +22,11 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
-	outline: 1px solid red;
 }
 
 .event-birthday__title-wrapper {
 	max-width: 279px;
 	width: 100%;
-	outline: 1px solid blue;
 }
 
 .event-birthday__title {
@@ -99,7 +97,6 @@
 
 /* =====form===== */
 .event-birthday__form-wrapper {
-	outline: 1px solid black;
 	max-width: 311px;
 	width: 100%;
 	min-height: 427px;
