@@ -1,6 +1,4 @@
 .event-birthday.center {
-	max-width: 1280px;
-	width: 100%;
 	min-height: 544px;
 	padding: 60px 50px 57px;
 	box-sizing: border-box;
@@ -42,7 +40,7 @@
 	content: "";
 	width: 286px;
 	height: 89px;
-	background: url(../images/event-birthday/event-birthday-background-title.svg) no-repeat center / contain;
+	background: url(../images/event-birthday/event-birthday-background-title.svg) no-repeat center / cover;
 	left: -4px;
 	top: 4px;
 	z-index: -1;

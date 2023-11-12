@@ -1,0 +1,132 @@
+.contacts {
+	position: relative;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+.contacts::before {
+	content: '';
+	position: absolute;
+	max-width: 1280px;
+	width: 100%;
+	height: 25px;
+	background: var(--background-color-1);
+	top: -25px;
+	left: 0;
+	z-index: -1;
+}
+
+.contacts.center {
+	padding: 0 18px 52px 54px;
+	box-sizing: border-box;
+}
+
+.contacts.center,
+.footer__map {
+	background: var(--background-color-1);
+}
+
+.contacts__title-wrp {
+	max-width: 316px;
+	width: 100%;
+	padding-bottom: 16px;
+}
+
+.contacts__title {
+	position: relative;
+	max-width: 257px;
+	width: 100%;
+	z-index: 0;
+	top: -27px;
+}
+
+.contacts__title::before {
+	position: absolute;
+	content: "";
+	width: 264px;
+	height: 47px;
+	background: url(../images/footer/contacts-title-background.svg) no-repeat center / cover;
+	left: -4px;
+	top: 1px;
+	z-index: -1;
+}
+
+.contacts__adress {
+	max-width: 316px;
+	width: 100%;
+}
+
+.contacts__phone {
+	margin: 0 0 2px 0;
+}
+
+.contacts__phone,
+.contacts__phone .phone__link {
+	max-width: 376px;
+	width: 100%;
+}
+
+.contacts__phone .phone__link span {
+	position: relative;
+	font-size: 48px;
+}
+
+.contacts__phone .phone__link span::after {
+	position: absolute;
+	content: "";
+	width: 382px;
+	height: 45px;
+	background: url(../images/footer/footer-phone-background.svg) no-repeat center / contain;
+	left: -3px;
+	top: 9px;
+	z-index: -1;
+}
+
+.contacts__social .social__list {
+	gap: 12px;
+	min-height: 54px;
+}
+
+.footer__map {
+	position: relative;
+	margin: 0 auto;
+	max-width: 1280px;
+	min-height: 345px;
+	z-index: 0;
+}
+
+.footer__map::after {
+	content: '';
+	position: absolute;
+	max-width: 1280px;
+	width: 100%;
+	height: 25px;
+	background: var(--background-color-3);
+	bottom: 0px;
+	left: 0;
+	z-index: -1;
+}
+
+.map {
+	border-radius: 30px;
+	width: 100%;
+	min-height: 345px;
+}
+
+.footer__info.center {
+	min-height: 72px;
+	padding: 30px 54px;
+	background: var(--background-color-3);
+}
+
+.footer__info-list {
+	display: flex;
+	align-items: center;
+	gap: 83px;
+}
+
+.footer__info-item:nth-child(2) {
+	flex-grow: 2;
+}
