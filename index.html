@@ -916,38 +916,75 @@
 					</div>
 				</div>
 				<div class="event-birthday__form-wrapper">
-					<form class="form event-birthday__form" action="" id="event-birthday-form">
-						<input class="form__input" type="text" id="age" name="child-age"
-							placeholder="Какой возраст вашего ребенка?">
+					<form class="form event-birthday__form" id="event-birthday-form" action="#" method="get"
+						enctype="multipart/form-data">
+						<input class="form__input" type="number" id="age" name="child-age"
+							placeholder="Какой возраст вашего ребенка?" tabindex="1" required>
 						<input class="form__input" type="text" id="child-	gender" name="child-gender"
-							placeholder="Мальчик или девочка?">
-						<input class="form__input" type="date" id="date-of-event-birthday" name="date-of-event-birthday"
-							placeholder="На какую дату и время планируете?">
+							placeholder="Мальчик или девочка?" tabindex="2">
+						<input class="form__input" type="text" onfocus="this.type='date'" id="date-of-event-birthday"
+							name="date-of-event-birthday" placeholder="На какую дату и время планируете?" tabindex="3" required>
 						<input class="form__input" type="number" id="quantity-mambers" name="quantity-mambers"
-							placeholder="Какое будет количество гостей?">
-
-						<button class="event-birthday__btn button">Подобрать сценарий</button>
+							placeholder="Какое будет количество гостей?" tabindex="4" required>
+						<button class="event-birthday__btn button" type="submit">Подобрать сценарий</button>
 					</form>
 				</div>
 			</div>
 		</section>
 	</main>
-	<!-- <footer>
-		<div class="footer__social-wrapper">
-			<ul class="social-list">
-				<li class="social-item">
-					<a class="social-link" href="https://vk.com" target="_blank"></a>
+
+	<footer class="footer">
+		<section class="contacts center">
+			<div class="contacts__title-wrp">
+				<h2 class="contacts__title">контакты</h2>
+				<p class="contacts__adress">
+					Адрес: 3-я Курская&nbsp;15. Рядом парковка возле магазина Маяк. Рядом остановка общественного транспорта
+					&laquo;Гостиница Орёл&raquo;
+				</p>
+			</div>
+			<div class="contacts__phone">
+				<a class="phone-link" href="tel:+79208149977">
+					<span id="company-main-phone">+7 920 814 99 77</span>
+				</a>
+			</div>
+			<div class="contacts__social-wrapper">
+				<ul class="social-list">
+					<li class="social-item">
+						<a class="social-link" href="https://vk.com" target="_blank"></a>
+					</li>
+					<li class="social-item">
+						<a class="social-link" href="https://telegram.org" target="_blank"></a>
+					</li>
+					<li class="social-item">
+						<a class="social-link social-link_whatsapp" href="https://web.whatsapp.com" target="_blank"></a>
+					</li>
+				</ul>
+
+		</section>
+		</div>
+		<div class="footer__map map">
+			<div class="map-wrp">
+				<!-- <iframe
+			src="https://yandex.ru/map-widget/v1/?um=constructor%3A78b95bfa518c62897c419c6bf88abd149a64d76f94175cf3eee313e14c06fe31&amp;source=constructor"
+			width="1280" height="345" frameborder="0"></iframe> -->
+
+				<!-- <script type="text/javascript" charset="utf-8" async
+			src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A78b95bfa518c62897c419c6bf88abd149a64d76f94175cf3eee313e14c06fe31&amp;width=1280&amp;height=345&amp;lang=ru_RU&amp;scroll=true"></script> -->
+			</div>
+		</div>
+		<div class="footer__info center">
+			<ul class="footer__info-list">
+				<li class="footer__info-item">
+					<a class="footer__info-link" href="#">Правила посещения студии</a>
 				</li>
-				<li class="social-item">
-					<a class="social-link" href="https://telegram.org" target="_blank"></a>
+				<li class="footer__info-item">
+					<a class="footer__info-link" href="#">Политика конфиденциальности</a>
 				</li>
-				<li class="social-item">
-					<a class="social-link social-link_whatsapp" href="https://web.whatsapp.com" target="_blank"></a>
-				</li>
+				<li class="footer__info-item">&copy;&nbsp;2023 ДомиКидс</li>
 			</ul>
 		</div>
-	</footer> -->
-	<footer class="footer-page"></footer>
+	</footer>
+
 	<script type="module" src="js/main.js"></script>
 	<script type="module" src="js/slider-view-studio.js"></script>
 	<script type="module" src="js/slider-character-samples.js"></script>

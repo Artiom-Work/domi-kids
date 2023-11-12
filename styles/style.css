@@ -24,6 +24,10 @@ a {
 	color: var(--text-color);
 }
 
+a {
+	text-decoration: underline;
+}
+
 .center {
 	max-width: 1280px;
 	padding: 0 50px;
@@ -106,7 +110,7 @@ a {
 .form__input {
 	max-width: 311px;
 	width: 100%;
-	padding: 28px 0 28px 56px;
+	padding: 28px 56px;
 	box-sizing: border-box;
 	border-radius: 100px;
 	background: var(--text-color-2);
@@ -117,7 +121,6 @@ a {
 }
 
 /* ========= */
-
 
 @media(max-width:1280px) and (min-width:768px) {
 	.view-studio {
