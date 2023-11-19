@@ -13,9 +13,14 @@
 @import "reviews.css";
 @import "event-birthday.css";
 @import "footer.css";
+@import "popaps.css";
 
 body {
 	background: linear-gradient(to right, rgba(255, 255, 137, 1) 0%, rgba(54, 244, 216, 1) 100%);
+}
+
+body.lock {
+	overflow: hidden;
 }
 
 body,
@@ -34,7 +39,6 @@ a {
 	width: 100%;
 	padding: 0 50px;
 	margin: 0 auto;
-	outline: 1px solid red;
 }
 
 .header__promo-title,
@@ -127,11 +131,13 @@ a {
 	background: url(../images/vk-icon.svg) no-repeat center / cover;
 }
 
-.social__item:nth-child(2) .social__link {
+.social__item:nth-child(2) .social__link,
+.popap__social .social__item:nth-child(1) .social__link {
 	background: url(../images/telegramm-icon.svg) no-repeat center / cover;
 }
 
-.social__item_whatsapp .social__link {
+.social__item_whatsapp .social__link,
+.popap__social .social__item:nth-child(2) .social__link {
 	background: url(../images/whatsapp-icon.svg) no-repeat center / cover;
 
 }
