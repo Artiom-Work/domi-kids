@@ -1,4 +1,4 @@
-.popap {
+.popup {
 	position: fixed;
 	width: 100%;
 	height: 100%;
@@ -12,18 +12,18 @@
 	transition: all 0.8s ease 0s;
 }
 
-.popap.open {
+.popup.open {
 	opacity: 1;
 	visibility: visible;
 	z-index: 1;
 }
 
-.popap.open .popap__content {
+.popup.open .popup__content {
 	transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
 	opacity: 1;
 }
 
-.popap__close-container {
+.popup__close-container {
 	position: absolute;
 	border-radius: 50px;
 	width: 50px;
@@ -34,15 +34,15 @@
 	cursor: pointer;
 }
 
-.popap__close {
+.popup__close {
 	position: relative;
 	display: block;
 	width: 100%;
 	height: 100%;
 }
 
-.popap__close::after,
-.popap__close::before {
+.popup__close::after,
+.popup__close::before {
 	content: '';
 	position: absolute;
 	border-radius: 7px;
@@ -53,22 +53,22 @@
 	left: 12px;
 }
 
-.popap__close::after {
+.popup__close::after {
 	transform: rotate(-45deg);
 }
 
-.popap__close::before {
+.popup__close::before {
 	transform: rotate(45deg);
 }
 
-.popap__body {
+.popup__body {
 	min-height: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
-.popap__content {
+.popup__content {
 	position: relative;
 	max-width: 360px;
 	width: 100%;
@@ -82,12 +82,12 @@
 	transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
 }
 
-.popap__content .map {
+.popup__content .map {
 	min-height: 435px;
 }
 
 /* ========= */
-.popap__title {
+.popup__title {
 	font-family: var(--title-font-family-1), sans-serif;
 	color: var(--title-text-color);
 	font-size: 20px;
@@ -98,19 +98,19 @@
 	margin: 0 0 11px 0;
 }
 
-.popap__title span {
+.popup__title span {
 	color: var(--background-color-button-1);
 }
 
-.popap__subtitle {
+.popup__subtitle {
 	margin: 0 0 15px 0;
 }
 
-.popap__form-wrapper form {
+.popup__form-wrapper form {
 	margin: 0 0 20px 0;
 }
 
-.popap__form .form__input {
+.popup__form .form__input {
 	padding: 28px 49px;
 }
 
@@ -118,7 +118,11 @@
 	padding: 0 0 8px 0;
 }
 
-.popap__social-wrapper {
+.get-price-btn {
+	padding: 0;
+}
+
+.popup__social-wrapper {
 	max-width: 303px;
 	width: 100%;
 	min-height: 50px;
@@ -127,22 +131,22 @@
 	align-items: center;
 }
 
-.popap__social {
+.popup__social {
 	max-width: 107px !important;
 	width: 100%;
 	min-height: 50px;
 }
 
-.popap__social .social__item_whatsapp {
+.popup__social .social__item_whatsapp {
 	height: 50px !important;
 }
 
-.popap__social .social__item_whatsapp .social__link {
+.popup__social .social__item_whatsapp .social__link {
 	background: url(../images/whatsapp-icon.svg) no-repeat center / contain !important;
 	height: 50px !important;
 }
 
-.popap__social-text {
+.popup__social-text {
 	max-width: 178px;
 	width: 100%;
 }
