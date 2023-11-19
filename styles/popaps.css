@@ -15,6 +15,7 @@
 .popap.open {
 	opacity: 1;
 	visibility: visible;
+	z-index: 1;
 }
 
 .popap.open .popap__content {
@@ -72,13 +73,17 @@
 	max-width: 360px;
 	width: 100%;
 	min-height: 505px;
-	padding: 43px 26px;
+	padding: 43px 26px 36px;
 	border-radius: 30px;
 	box-sizing: border-box;
 	background-color: var(--background-color-3);
 	transition: all 0.8s ease 0s;
 	opacity: 0;
 	transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+}
+
+.popap__content .map {
+	min-height: 435px;
 }
 
 /* ========= */
@@ -91,6 +96,10 @@
 	max-width: 300px;
 	width: 100%;
 	margin: 0 0 11px 0;
+}
+
+.popap__title span {
+	color: var(--background-color-button-1);
 }
 
 .popap__subtitle {
