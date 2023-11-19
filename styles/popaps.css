@@ -12,23 +12,14 @@
 	transition: all 0.8s ease 0s;
 }
 
-.popap:target {
+.popap.open {
 	opacity: 1;
 	visibility: visible;
 }
 
-.popap:target .popap__content {
+.popap.open .popap__content {
 	transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
 	opacity: 1;
-}
-
-.popap__area {
-	/* delete */
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
 }
 
 .popap__close-container {
