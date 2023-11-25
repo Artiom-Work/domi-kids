@@ -82,10 +82,6 @@
 	transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
 }
 
-.popup__content .map {
-	min-height: 435px;
-}
-
 /* ========= */
 .popup__title {
 	font-family: var(--title-font-family-1), sans-serif;
@@ -99,6 +95,7 @@
 }
 
 .popup__title span {
+	position: relative;
 	color: var(--background-color-button-1);
 }
 
@@ -114,12 +111,8 @@
 	padding: 28px 49px;
 }
 
-.calc-price-data-submit {
-	padding: 0 0 8px 0;
-}
-
-.get-price-btn {
-	padding: 0;
+.popup__button {
+	padding: 0 0 4px 0;
 }
 
 .popup__social-wrapper {

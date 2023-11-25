@@ -1,6 +1,13 @@
+import { popupContentCalcPrice, popupContentFreeDate, popupContentGetPrice, popupContentGetOffer } from "./data.js";
+
+const contentCalcPrice = JSON.parse(popupContentCalcPrice);
+const contentFreeDate = JSON.parse(popupContentFreeDate);
+const contentGetPrice = JSON.parse(popupContentGetPrice);
+const contentGetOffer = JSON.parse(popupContentGetOffer);
+console.log(contentGetOffer);
+
 const popupLinks = document.querySelectorAll('.popup-link');
 const body = document.querySelector('body');
-const footer = document.querySelector('.footer');
 const lockPaddingElements = document.querySelectorAll('.lock-padding');
 const closePopupIcons = document.querySelectorAll('.close-popup');
 
@@ -11,6 +18,7 @@ if (popupLinks.length > 0) {
 	for (let index = 0; index < popupLinks.length; index++) {
 		const popupLink = popupLinks[index];
 		popupLink.addEventListener('click', function (e) {
+			createPopupContent(popupLink);
 			const popupName = popupLink.getAttribute('href').replace('#', '');
 			const curentPopup = document.getElementById(popupName);
 			popupOpen(curentPopup);
@@ -33,6 +41,26 @@ document.addEventListener('keydown', function (e) {
 		popupClose(popupActive);
 	}
 });
+
+function createPopupContent(popupLink) {
+	const popup = document.getElementById('popup-1');
+	const popupTitle = popup.querySelector('.popup__title');
+	const popupButton = popup.querySelector('.popup__button');
+
+	if (popupLink.hasAttribute('data-calc-price-btn')) {
+		popupTitle.textContent = contentCalcPrice.title;
+		popupButton.textContent = contentCalcPrice.btn;
+	} else if (popupLink.hasAttribute('data-free-date-btn')) {
+		popupTitle.textContent = contentFreeDate.title;
+		popupButton.textContent = contentFreeDate.btn;
+	} else if (popupLink.hasAttribute('data-get-price-btn')) {
+		popupTitle.textContent = contentGetPrice.title;
+		popupButton.textContent = contentGetPrice.btn;
+	} else if (popupLink.hasAttribute('data-get-offer-btn')) {
+		popupTitle.innerHTML = `${contentGetOffer.title1}<span>${contentGetOffer.titlePink1}</span>${contentGetOffer.title2}<span>${contentGetOffer.titlePink2}</span>`;
+		popupButton.textContent = contentGetOffer.btn;
+	}
+}
 
 function popupOpen(curentPopup) {
 	if (curentPopup && unlock) {
@@ -94,48 +122,3 @@ function bodyUnLock() {
 		unlock = true;
 	}, timeout);
 }
-
-// function createPopup(title, button) {
-// 	const popup = `
-//  <div id="calc-price" class="popup">
-//  <div class="popup__body">
-// 	 <div class="popup__content">
-// 		 <div class="popup__close-container">
-// 			 <a href="#" class="popup__close close-popup"></a>
-// 		 </div>
-// 		 <h2 class="popup__title">
-// 			 отправьте заявку&nbsp;на расчет стоимости вашего праздника
-// 		 </h2>
-// 		 <p class="popup__subtitle">Мы&nbsp;перезвоним через 15&nbsp;минут</p>
-// 		 <div class="popup__form-wrapper">
-// 			 <form id="calc-price-form" class="form popup__form" action="#" method="get" enctype="multipart/form-data">
-// 				 <input id="user-name" class="form__input popup__form-input" name="user-name" type="text" placeholder="Имя"
-// 					 required>
-// 				 <input id="user-phone" class="form__input popup__form-input" name="user-phone" type="tel"
-// 					 placeholder="Номер телефона" required>
-// 				 <button class="calc-price-data-submit button" type="submit">отправить</button>
-// 			 </form>
-// 			 <div class="popup__social-wrapper">
-// 				 <p class="popup__social-text">
-// 					 Или напишите нам сообщение удобным для вас способом
-// 				 </p>
-// 				 <div class="popup__social social">
-// 					 <ul class="social__list">
-// 						 <li class="social__item">
-// 							 <a class="social__link" href="https://telegram.org" target="_blank"></a>
-// 						 </li>
-// 						 <li class="social__item social__item_whatsapp">
-// 							 <a class="social__link" href="https://web.whatsapp.com" target="_blank"></a>
-// 						 </li>
-// 					 </ul>
-// 				 </div>
-// 			 </div>
-// 		 </div>
-// 	 </div>
-//  </div>
-// </div>
-//  `;
-// 	footer.insertAdjacentHTML('afterend', popup);
-// 	const curentPopup = document.getElementById('calc-price');
-// 	popupOpen(curentPopup);
-// }
