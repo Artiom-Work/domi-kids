@@ -40,14 +40,18 @@
 	width: 100%;
 }
 
-.info__phone,
-.info__phone .phone__link {
-	max-width: 158px;
+.how-to-find-link {
+	text-decoration: none;
+}
+
+.info__phone {
+	max-width: 166px;
 	width: 100%;
+	min-height: 23px;
 }
 
 .header__social {
-	margin: 0 0 4px 23px;
+	margin: 0 0 4px 19px;
 }
 
 .menu {
@@ -80,7 +84,7 @@
 	padding: 0 20px 50px;
 	box-sizing: border-box;
 	left: 33px;
-	top: 258px;
+	top: 257px;
 	max-width: 360px;
 	width: 100%;
 	min-height: 387px;
@@ -90,50 +94,41 @@
 
 .header__promo {
 	position: absolute;
-	top: -58px;
+	top: -27px;
+	left: 20px;
 }
 
 .header__promo-title {
 	position: relative;
+	left: -5px;
 	max-width: 270px;
+	width: 100%;
 	min-height: 76px;
-	z-index: 0;
-	margin-bottom: 7px;
+	margin: 0 0 3px 0;
 }
 
-.header__promo-title::after {
-	position: absolute;
-	content: "";
+.header__promo-title .duble-color {
 	width: 278px;
 	height: 94px;
-	background: url(../images/header/background-text-happy-birthday.svg) no-repeat center / cover;
-	left: -4px;
-	top: 2px;
-	z-index: -1;
 }
 
 .header__promo-subtitle {
 	position: relative;
+	left: -5px;
 	max-width: 310px;
 	width: 100%;
-	min-height: 63px;
-	font-family: var(--title-font-family-1), sans-serif;
-	color: var(--title-text-color);
-	font-size: 20px;
-	line-height: 25px;
-	z-index: 0;
-	margin-bottom: 11px;
+	min-height: 79px;
+	margin: 0 0 5px 0;
 }
 
-.header__promo-subtitle::after {
-	position: absolute;
-	content: "";
+.header__promo-subtitle .duble-color {
 	width: 318px;
 	height: 79px;
-	background: url(../images/header/background-text-happy-birthday-subtitle.svg) no-repeat center / cover;
-	left: -4px;
-	top: -4px;
-	z-index: -1;
+}
+
+.header__promo-subtitle .duble-color__text {
+	font-size: 20px;
+	line-height: 25px;
 }
 
 .header__promo-list {
@@ -141,7 +136,7 @@
 	width: 100%;
 	padding: 0 0 0 27px;
 	box-sizing: border-box;
-	margin: 0 0 32px 0;
+	margin: 0 0 33px 0;
 }
 
 .header__promo-item:not(li:last-of-type) {
