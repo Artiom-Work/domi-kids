@@ -25,20 +25,12 @@
 	position: relative;
 	max-width: 278px;
 	width: 100%;
-	top: -22px;
-	left: 3px;
-	z-index: 0;
+	top: -18px;
 }
 
-.reviews__title::after {
-	position: absolute;
-	content: "";
+.reviews__title .double-color {
 	width: 285px;
-	height: 93px;
-	background: url(../images/reviews/reviews-title-background.svg) no-repeat center / cover;
-	left: -4px;
-	top: 4px;
-	z-index: -1;
+	height: 85px;
 }
 
 .reviews__container-wrapper {

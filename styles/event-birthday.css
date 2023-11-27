@@ -7,7 +7,7 @@
 }
 
 .event-birthday__container {
-	max-width: 1011px;
+	max-width: 1016px;
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
@@ -15,7 +15,7 @@
 }
 
 .event-birthday__info {
-	max-width: 640px;
+	max-width: 643px;
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
@@ -29,43 +29,37 @@
 
 .event-birthday__title {
 	max-width: 279px;
-	position: relative;
-	z-index: 0;
-	line-height: 42px;
-	margin: 0 0 7.5px 0;
+	width: 100%;
+	min-height: 91px;
 }
 
-.event-birthday__title::after {
-	position: absolute;
-	content: "";
+.event-birthday__title .double-color {
 	width: 286px;
-	height: 89px;
-	background: url(../images/event-birthday/event-birthday-background-title.svg) no-repeat center / cover;
-	left: -4px;
-	top: 4px;
-	z-index: -1;
+	height: 91px;
+}
+
+.event-birthday__title .double-color__text {
+	line-height: 42px;
 }
 
 .event-birthday__subtitle {
-	position: relative;
 	max-width: 195px;
 	width: 100%;
-	font-family: var(--title-font-family-1), sans-serif;
-	color: var(--title-text-color);
-	font-size: 20px;
-	line-height: 25px;
-	z-index: 0;
+	min-height: 130px;
 }
 
-.event-birthday__subtitle::after {
-	position: absolute;
-	content: "";
+.event-birthday__subtitle .double-color {
 	width: 195px;
-	height: 127px;
-	background: url(../images/event-birthday/event-birthday-background-subtitle.svg) no-repeat center / contain;
-	left: -4px;
-	top: 0;
-	z-index: -1;
+	height: 130px;
+}
+
+.event-birthday__subtitle .double-color__text {
+	font-size: 20px;
+	line-height: 25px;
+}
+
+.event-birthday__subtitle .double-color__text_pink {
+	fill: var(--background-color-button-1);
 }
 
 .event-birthday__subtitle span {
@@ -113,11 +107,12 @@ input[id="date-of-event-birthday"] {
 	color: transparent;
 } */
 
-.event-birthday__form {}
-
+.event-birthday__form-wrapper .form {
+	gap: 12px;
+}
 
 .event-birthday__btn {
-	padding: 12px 70px 14px;
+	padding: 11px 70px 14px;
 }
 
 /* ========== */

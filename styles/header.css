@@ -107,7 +107,7 @@
 	margin: 0 0 3px 0;
 }
 
-.header__promo-title .duble-color {
+.header__promo-title .double-color {
 	width: 278px;
 	height: 94px;
 }
@@ -121,12 +121,12 @@
 	margin: 0 0 5px 0;
 }
 
-.header__promo-subtitle .duble-color {
+.header__promo-subtitle .double-color {
 	width: 318px;
 	height: 79px;
 }
 
-.header__promo-subtitle .duble-color__text {
+.header__promo-subtitle .double-color__text {
 	font-size: 20px;
 	line-height: 25px;
 }

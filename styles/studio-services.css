@@ -17,7 +17,7 @@
 }
 
 .studio-services.center {
-	padding: 29px 50px 145px;
+	padding: 29px 50px 150px;
 }
 
 .studio-services__title-wrapper {
@@ -25,9 +25,9 @@
 	max-width: 332px;
 	width: 100%;
 	min-height: 235px;
-	padding: 45px 0 60px 4px;
+	padding: 48px 0 0 0px;
 	box-sizing: border-box;
-	margin: 0 0 10px 0;
+	margin: 0 0 7px 0;
 }
 
 .studio-services__title-wrapper::before {
@@ -56,18 +56,13 @@
 .studio-services__title {
 	position: relative;
 	max-width: 318px;
+	width: 100%;
 	z-index: 1;
 }
 
-.studio-services__title::after {
-	position: absolute;
-	content: "";
+.studio-services__title .double-color {
 	width: 324px;
-	height: 198px;
-	background: url(../images/service-studio/background-title-service-studio.svg) no-repeat center / cover;
-	left: 2px;
-	top: 3px;
-	z-index: -1;
+	height: 139px;
 }
 
 /* ====desctop-block==== */
@@ -92,7 +87,7 @@
 	max-width: 360px;
 	width: 100%;
 	min-height: 257px;
-	padding: 98px 17px 30px 25px;
+	padding: 101px 17px 25px 25px;
 	box-sizing: border-box;
 	border-radius: 30px;
 	margin: 103px 0 0 0;
@@ -107,89 +102,63 @@
 }
 
 .service-card__name {
+	position: relative;
+	left: -3px;
 	max-width: 298px;
 	width: 100%;
-	font-family: var(--title-font-family-1);
-	color: var(--title-text-color);
-	font-weight: 400;
-	font-size: 20px;
-	margin: 0 0 20px 0;
+	margin: 0 0 17px 0;
+}
+
+.service-card__name .double-color__text {
 	line-height: 25px;
-	z-index: 0;
+	font-size: 20px;
 }
 
-.studio-rental,
-.animator,
-.paper-show,
-.illusionist,
-.aquagrimm,
-.service-hero,
-.service-silver-package,
-.service-babble-show {
-	position: relative;
-}
-
-.studio-rental::before,
-.animator::before,
-.paper-show::before,
-.illusionist::before,
-.aquagrimm::before,
-.service-hero::before,
-.service-silver-package::before,
-.service-babble-show::before {
-	position: absolute;
-	content: "";
+.studio-rental .double-color {
 	width: 176px;
 	height: 27px;
-	top: 1px;
-	left: -4px;
-	background: url(../images/service-studio/service-title-studio-rental.svg);
-	z-index: -1;
 }
 
-.animator::before {
+.animator .double-color {
 	width: 227px;
-	height: 24px;
-	background: url(../images/service-studio/service-title-animatior.svg);
+	height: 25px;
 }
 
-.paper-show::before {
+.paper-show .double-color {
 	width: 177px;
-	height: 24px;
-	left: -5px;
-	background: url(../images/service-studio/service-title-paper-show.svg);
+	height: 25px;
 }
 
-.illusionist::before {
+.illusionist .double-color {
 	width: 121px;
-	height: 27px;
-	background: url(../images/service-studio/service-title-illusionist.svg);
+	height: 24px;
 }
 
-.aquagrimm::before {
+.aquagrimm .double-color {
 	width: 115px;
-	height: 27px;
-	background: url(../images/service-studio/service-title-aquagrimm.svg);
+	height: 24px;
 }
 
-.service-hero::before {
+.service-hero {
+	margin: 0 0 12px;
+}
+
+.service-hero .double-color {
+	position: relative;
+	top: -3px;
+	left: -3px;
 	width: 287px;
 	height: 57px;
-	top: -4px;
-	background: url(../images/service-studio/service-hero-title.svg);
 }
 
-.service-silver-package::before {
+.service-silver-package .double-color {
 	width: 303px;
 	height: 77px;
-	background: url(../images/service-studio/service-title-silver-package.svg);
 }
 
-.service-babble-show::before {
+.service-babble-show .double-color {
 	width: 292px;
-	height: 102px;
-	top: -3px;
-	background: url(../images/service-studio/service-title-babble-show.svg);
+	height: 77px;
 }
 
 .service-card__description:not(:last-child) {

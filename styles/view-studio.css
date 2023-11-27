@@ -6,7 +6,6 @@
 	position: relative;
 	border-radius: 30px;
 	background: url(../images/background-bables.png) no-repeat center / cover;
-	z-index: 0;
 }
 
 .view-studio__info-wrapper {
@@ -16,33 +15,26 @@
 	justify-content: flex-start;
 	align-items: center;
 	gap: 33px;
-	margin: 0 0 44px 0;
+	margin: 0 0 40px 0;
 }
 
 .view-studio__title {
 	position: relative;
 	max-width: 238px;
-	top: -28px;
+	width: 100%;
+	top: -27px;
 	left: 2px;
-	z-index: 0;
 }
 
-.view-studio__title::after {
-	position: absolute;
-	content: "";
+.view-studio__title .double-color {
 	width: 245px;
 	height: 94px;
-	background: url(../images/view-studio/background-view-studio-title.svg) no-repeat center / cover;
-	left: -4px;
-	top: 3px;
-	z-index: -1;
 }
 
 .view-studio__txt {
 	max-width: 299px;
 	width: 100%;
 	line-height: normal;
-	z-index: 0;
 }
 
 /* ====slider==== */
@@ -52,7 +44,6 @@
 	position: relative;
 	max-width: 1180px;
 	overflow: hidden;
-	z-index: 0;
 }
 
 .slider-view-studio__line {
