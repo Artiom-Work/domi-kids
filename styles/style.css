@@ -56,21 +56,6 @@ a {
 	paint-order: stroke fill;
 }
 
-/* .header__promo-title,
-.event-description__title,
-.view-studio__title,
-.character-samples__title,
-.studio-services__title,
-.example-photos__title,
-.reviews__title,
-.event-birthday__title,
-.contacts__title {
-	font-family: var(--title-font-family-1), sans-serif;
-	color: var(--title-text-color);
-	font-weight: 400;
-	width: 100%;
-} */
-
 .button {
 	display: block;
 	font-family: var(--title-font-family-1), sans-serif;
@@ -148,6 +133,14 @@ a {
 /* ============== */
 
 /* ====forms-style==== */
+.valid {
+	outline: 3px solid #3cff00;
+}
+
+.invalid {
+	outline: 3px solid red;
+}
+
 .form {
 	display: flex;
 	flex-direction: column;

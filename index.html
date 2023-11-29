@@ -1128,17 +1128,25 @@
 					<div class="event-birthday__form-wrapper">
 						<form class="event-birthday__form form" id="event-birthday-form" action="#" method="get"
 							enctype="multipart/form-data">
-							<input class="form__input" type="number" id="age" name="child-age"
-								placeholder="Какой возраст вашего ребенка?" tabindex="1" required>
-							<input class="form__input" type="text" id="child-	gender" name="child-gender"
-								placeholder="Мальчик или девочка?" tabindex="2">
+							<input class="form__input" type="number" id="child-age" name="child-age"
+								placeholder="Какой возраст вашего ребенка?" tabindex="1" min="0">
+							<input class="form__input" list="choices-child" id="child-gender" name="child-gender" tabindex="2"
+								placeholder="Мальчик или девочка?">
+							<datalist id="choices-child">
+								<option value="Мальчик">
+								<option value="Девочка">
+							</datalist>
+
 							<input class="form__input" type="text" onfocus="this.type='date'" id="date-of-event-birthday"
-								name="date-of-event-birthday" placeholder="На какую дату и время планируете?" tabindex="3" required>
-							<input class="form__input" type="number" id="quantity-mambers" name="quantity-mambers"
-								placeholder="Какое будет количество гостей?" tabindex="4" required>
-							<button class="event-birthday__btn button popup-link" data-get-offer-btn type="submit"
-								href="#popup-1">Подобрать
-								сценарий</button>
+								name="date-of-event-birthday" placeholder="На какую дату и время планируете?" tabindex="3">
+
+							<input class="form__input" type="number" id="quantity-of-members" name="quantity-of-members" min="0"
+								placeholder="Какое будет количество гостей?" tabindex="4">
+
+							<button class="event-birthday__btn button popup-link" data-get-offer-btn type="submit" href="#popup-1">
+								Подобрать
+								сценарий
+							</button>
 						</form>
 					</div>
 				</div>
@@ -1212,11 +1220,12 @@
 					</h2>
 					<p class="popup__subtitle">Мы&nbsp;перезвоним через 15&nbsp;минут</p>
 					<div class="popup__form-wrapper">
-						<form id="calc-price-form" class="form popup__form" action="#" method="get" enctype="multipart/form-data">
-							<input id="user-name" class="form__input popup__form-input" name="user-name" type="text" placeholder="Имя"
-								required>
-							<input id="user-phone" class="form__input popup__form-input" name="user-phone" type="tel"
-								placeholder="Номер телефона" required>
+						<form id="form-user-call-back" class="form popup__form" action="#" method="get"
+							enctype="multipart/form-data">
+							<input id="user-name" class="form__input popup__form-input" name="user-name" type="text" maxlength="30"
+								placeholder="Имя" required>
+							<input id="user-phone" class="form__input popup__form-input" name="user-phone"
+								onfocus="this.value='+375 '" type="tel" placeholder="Номер телефона" maxlength="38" required>
 							<button class="button popup__button" type="submit"></button>
 						</form>
 						<div class="popup__social-wrapper">

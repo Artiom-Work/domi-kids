@@ -4,7 +4,6 @@ const contentCalcPrice = JSON.parse(popupContentCalcPrice);
 const contentFreeDate = JSON.parse(popupContentFreeDate);
 const contentGetPrice = JSON.parse(popupContentGetPrice);
 const contentGetOffer = JSON.parse(popupContentGetOffer);
-console.log(contentGetOffer);
 
 const popupLinks = document.querySelectorAll('.popup-link');
 const body = document.querySelector('body');
@@ -122,3 +121,65 @@ function bodyUnLock() {
 		unlock = true;
 	}, timeout);
 }
+
+// validation popaps form to call back user
+
+const userName = document.getElementById('user-name');
+const userPhone = document.getElementById('user-phone');
+
+const validOnlyLetters = /^[A-Za-z-А-Яа-яЁё]+$/;
+const validPatternPhone = /^[+\{0-9}][0-9,-\s\{()}]+$/;
+
+let valid = false;
+
+userName.addEventListener('input', function (e) {
+	if (e.target.value === '' || !e.target.value.match(validOnlyLetters)) {
+		e.target.classList.remove('valid');
+		e.target.classList.add('invalid');
+		valid = false;
+	} else {
+		e.target.classList.remove('invalid');
+		e.target.classList.add('valid');
+		valid = true;
+	}
+});
+
+userPhone.addEventListener('input', function (e) {
+	if (e.target.value === '' || !e.target.value.match(validPatternPhone) || e.target.value.length <= 5) {
+		e.target.classList.remove('valid');
+		e.target.classList.add('invalid');
+		valid = false;
+	} else {
+		e.target.classList.remove('invalid');
+		e.target.classList.add('valid');
+		valid = true;
+	}
+});
+
+document.getElementById('form-user-call-back').addEventListener('submit', function (e) {
+	const userName = document.getElementById('user-name');
+	const userPhone = document.getElementById('user-phone');
+	if (userName.value === '' || !userName.value.match(validOnlyLetters)) {
+		valid = false;
+		userName.classList.remove('valid');
+		userName.classList.add('invalid');
+		alert('Пожалуйста, напишите как к вам можно обращаться, буквами.');
+	} else {
+		userName.classList.remove('invalid');
+		userName.classList.add('valid');
+	}
+
+	if (userPhone.value === '' || !userPhone.value.match(validPatternPhone) || userPhone.value.length <= 5) {
+		valid = false;
+		userPhone.classList.remove('valid');
+		userPhone.classList.add('invalid');
+		alert('Пожалуйста, укажите ваш номер телефона, со знака " + " либо цифры .');
+	} else {
+		userPhone.classList.remove('invalid');
+		userPhone.classList.add('valid');
+	}
+
+	if (!valid) {
+		e.preventDefault();
+	}
+});

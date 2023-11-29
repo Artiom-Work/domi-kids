@@ -98,15 +98,6 @@
 	margin-bottom: 30px !important;
 }
 
-/* input[id="date-of-event-birthday"]::-webkit-inner-spin-button,
-input[id="date-of-event-birthday"]::-webkit-calendar-picker-indicator {
-	display: none;
-}
-
-input[id="date-of-event-birthday"] {
-	color: transparent;
-} */
-
 .event-birthday__form-wrapper .form {
 	gap: 12px;
 }
