@@ -1129,9 +1129,9 @@
 						<form class="event-birthday__form form" id="event-birthday-form" action="#" method="get"
 							enctype="multipart/form-data">
 							<input class="form__input" type="number" id="child-age" name="child-age"
-								placeholder="Какой возраст вашего ребенка?" tabindex="1" min="0">
+								placeholder="Какой возраст вашего ребенка?" tabindex="1" min="0" required>
 							<input class="form__input" list="choices-child" id="child-gender" name="child-gender" tabindex="2"
-								placeholder="Мальчик или девочка?">
+								placeholder="Мальчик или девочка?" required>
 							<datalist id="choices-child">
 								<option value="Мальчик">
 								<option value="Девочка">
@@ -1253,7 +1253,7 @@
 	<script type="module" src="js/slider-view-studio.js"></script>
 	<script type="module" src="js/slider-character-samples.js"></script>
 	<script type="module" src="js/slider-example-photos.js"></script>
-	<script type="module" src="js/popups.js"></script>
+	<!-- <script type="module" src="js/popups.js"></script> -->
 </body>
 
 </html>

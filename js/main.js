@@ -61,7 +61,7 @@ document.getElementById('event-birthday-form').addEventListener('submit', functi
 
 	let valid = true;
 
-	if (document.getElementById('child-age').value <= 0) {
+	if (!childAge.value || childAge.value <= 0) {
 		valid = false;
 		childAge.classList.remove('valid');
 		childAge.classList.add('invalid');
@@ -70,7 +70,7 @@ document.getElementById('event-birthday-form').addEventListener('submit', functi
 		childAge.classList.remove('invalid');
 		childAge.classList.add('valid');
 	}
-	if ((childGender.value.replace(/\s/g, '').toLowerCase() != "мальчик" && childGender.value.replace(/\s/g, '').toLowerCase() != "девочка")) {
+	if (childGender.value === "" || childGender.value.replace(/\s/g, '').toLowerCase() != "мальчик" && childGender.value.replace(/\s/g, '').toLowerCase() != "девочка") {
 		valid = false;
 		childGender.classList.remove('valid');
 		childGender.classList.add('invalid');
@@ -79,7 +79,7 @@ document.getElementById('event-birthday-form').addEventListener('submit', functi
 		childGender.classList.remove('invalid');
 		childGender.classList.add('valid');
 	}
-	if (childBirthday.value === '') {
+	if (childBirthday.value === "") {
 		valid = false;
 		alert('Пожалуйста укажите дату мероприятия.');
 		childBirthday.classList.remove('valid');
@@ -89,15 +89,15 @@ document.getElementById('event-birthday-form').addEventListener('submit', functi
 		valid = false;
 		alert('Мы оргнизуем приздники детям крайне быстро, но к сожалению мы не можем вернуться в прошлое и создать праздник. Пожалуйста укажите дату мероприятия в настоящем или будущем времени.');
 	}
-	if (quantityOfMembers.value <= 0) {
+	if (quantityOfMembers.value === "" || quantityOfMembers.value <= 0) {
 		const userAnswer = confirm('Ваш ребёнок придёт один ?');
 		if (userAnswer == false) {
 			valid = false;
 			quantityOfMembers.classList.remove('valid');
 			quantityOfMembers.classList.add('invalid');
 		} else {
-			quantityOfMembers.remove('invalid');
-			quantityOfMembers.add('valid');
+			quantityOfMembers.classList.remove('invalid');
+			quantityOfMembers.classList.add('valid');
 		}
 	}
 	if (!valid) {
