@@ -85,3 +85,38 @@
 	margin: 0 auto;
 	padding: 0 33px;
 }
+
+@media(max-width:767px) {
+	.view-studio {
+		min-height: 654px;
+	}
+
+	.view-studio.center {
+		padding: 0;
+	}
+
+	.view-studio__info-wrapper {
+		margin: 0 0 23px 0;
+		padding: 0 0 0 20px;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 0px;
+	}
+
+	.view-studio__title {
+		left: 0;
+	}
+
+	.view-studio__txt {
+		margin: -5px 0 0 0;
+	}
+
+	.slider-view-studio {
+		margin: 0 0 28px 0;
+	}
+
+	.slider-view-studio__image {
+		min-height: 360px;
+		object-fit: cover;
+	}
+}
