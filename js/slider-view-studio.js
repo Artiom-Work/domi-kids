@@ -6,18 +6,18 @@ const sliderImages = document.querySelectorAll('.slider-view-studio__image'),
 let sliderCount = 0,
 	sliderWidth;
 
-window.addEventListener('resize', showSlideWidth);
+window.addEventListener('resize', showSliderWidth);
 sliderBtnPrev.addEventListener('click', switchPrevSlide);
 sliderBtnNext.addEventListener('click', switchNextSlide);
 
-function showSlideWidth() {
+function showSliderWidth() {
 	sliderWidth = document.querySelector('.slider-view-studio').offsetWidth;
 	sliderLine.style.width = sliderWidth * sliderImages.length + 'px';
 	sliderImages.forEach(image => image.style.width = sliderWidth + 'px');
 
 	createRollSlider();
 }
-showSlideWidth();
+showSliderWidth();
 
 function switchNextSlide() {
 	sliderCount++;
