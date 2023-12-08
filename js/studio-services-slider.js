@@ -13,7 +13,7 @@ sliderBtnNext.addEventListener('click', switchNextSlide);
 
 sliderCards.forEach(card => {
 	card.addEventListener('touchstart', function (e) {
-		var touch = e.touches[0];
+		let touch = e.touches[0];
 		startX = touch.clientX;
 	}, { passive: true });
 	card.addEventListener('touchmove', function (e) {
@@ -26,10 +26,10 @@ sliderCards.forEach(card => {
 
 		if (currentX > startX) {
 			// Свайп вправо
-			switchNextSlide();
+			switchPrevSlide();
 		} else {
 			// Свайп влево
-			switchPrevSlide()
+			switchNextSlide();
 		}
 		// Сброс начальной точки
 		startX = null;

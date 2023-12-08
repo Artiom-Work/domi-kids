@@ -111,3 +111,31 @@
 	margin: 0 0 20px 0;
 	text-decoration: none;
 }
+
+@media (max-width:635px) {
+	.social-info {
+		min-height: 399px;
+		padding: 62px 27px 60px 25px;
+	}
+
+	.social-info-inner {
+		flex-direction: column;
+		max-width: 305px;
+		min-height: 274px;
+		align-items: center;
+	}
+
+	.social-info__text-block::after {
+		right: 33px;
+	}
+
+	.social-info__social-image-wrp {
+		top: -16px;
+		right: 17px;
+	}
+
+	.social-info__button {
+		position: relative;
+
+	}
+}
