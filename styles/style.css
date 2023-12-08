@@ -143,7 +143,8 @@ a {
 /* ====sliders==== */
 .slider-view-studio,
 .slider-character-samples,
-.studio-services__slider {
+.studio-services__slider,
+.slider-example-photos {
 	position: relative;
 	max-width: 1180px;
 	overflow: hidden;
@@ -151,7 +152,8 @@ a {
 
 .slider-view-studio__line,
 .slider-character-samples__line,
-.studio-services__slider-line {
+.studio-services__slider-line,
+.slider-example-photos__line {
 	display: flex;
 	align-items: center;
 	transition: all ease 1s;
@@ -162,7 +164,9 @@ a {
 .slider-character-samples__btn-prev,
 .slider-character-samples__btn-next,
 .studio-services__btn-prev,
-.studio-services__btn-next {
+.studio-services__btn-next,
+.slider-example-photos__btn-prev,
+.slider-example-photos__btn-next {
 	position: absolute;
 	top: 49.3%;
 	background-color: transparent;
@@ -172,14 +176,16 @@ a {
 
 .slider-view-studio__btn-prev,
 .slider-character-samples__btn-prev,
-.studio-services__btn-prev {
+.studio-services__btn-prev,
+.slider-example-photos__btn-prev {
 	left: 0.2%;
 	transform: translateY(-50%) rotate(-90deg);
 }
 
 .slider-view-studio__btn-next,
 .slider-character-samples__btn-next,
-.studio-services__btn-next {
+.studio-services__btn-next,
+.slider-example-photos__btn-next {
 	right: 0.2%;
 	transform: translateY(-50%) rotate(90deg);
 }
@@ -189,12 +195,15 @@ a {
 .slider-character-samples__btn-next img,
 .slider-character-samples__btn-prev img,
 .studio-services__btn-prev img,
-.studio-services__btn-next img {
+.studio-services__btn-next img,
+.slider-example-photos__btn-next img,
+.slider-example-photos__btn-prev img {
 	width: 70px;
 }
 
 .slider-view-studio__image,
-.slider-character-samples__image {
+.slider-character-samples__image,
+.slider-example-photos__image {
 	border-radius: 30px;
 }
 
@@ -254,14 +263,5 @@ a {
 
 	.slider-example-photos {
 		margin: 0 0 calc(20px + (53 - 20) * ((100vw - 768px) / (1280 - 768))) 0;
-	}
-
-	.studio-services__list {
-		row-gap: 65px;
-		column-gap: 10px;
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-evenly;
-		align-items: flex-start;
 	}
 }

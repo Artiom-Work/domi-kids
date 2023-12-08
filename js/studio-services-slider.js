@@ -4,11 +4,37 @@ const sliderCards = document.querySelectorAll('.studio-services__line-item'),
 	sliderBtnPrev = document.querySelector('.studio-services__btn-prev');
 
 let sliderCount = 0,
-	sliderWidth;
+	sliderWidth,
+	startX;
 
 window.addEventListener('resize', showSliderWidth);
 sliderBtnPrev.addEventListener('click', switchPrevSlide);
 sliderBtnNext.addEventListener('click', switchNextSlide);
+
+sliderCards.forEach(card => {
+	card.addEventListener('touchstart', function (e) {
+		var touch = e.touches[0];
+		startX = touch.clientX;
+	}, { passive: true });
+	card.addEventListener('touchmove', function (e) {
+		if (!startX) {
+			return;
+		}
+
+		let touch = e.touches[0];
+		let currentX = touch.clientX;
+
+		if (currentX > startX) {
+			// Свайп вправо
+			switchNextSlide();
+		} else {
+			// Свайп влево
+			switchPrevSlide()
+		}
+		// Сброс начальной точки
+		startX = null;
+	}, { passive: true });
+});
 
 function showSliderWidth() {
 	sliderWidth = document.querySelector('.studio-services__slider').offsetWidth;
