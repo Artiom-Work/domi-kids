@@ -12,6 +12,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	gap: 18px;
 }
 
 .event-birthday__info {
@@ -107,3 +108,65 @@
 }
 
 /* ========== */
+@media (max-width:1000px) {
+	.event-birthday.center {
+		min-height: 707px;
+		padding: 30px;
+	}
+
+	.event-birthday__container {
+		max-width: 960px;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 30px;
+	}
+
+	.event-birthday__info {
+		max-width: 700px;
+		align-items: center;
+	}
+}
+
+@media (max-width:600px) {
+	.event-birthday.center {
+		min-height: 707px;
+		padding: 0 14px 37px 27px;
+	}
+
+	.event-birthday__container {
+		position: relative;
+		top: -22px;
+		left: -12px;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 22px;
+	}
+
+	.event-birthday__info {
+		position: relative;
+		max-width: 305px;
+		min-height: 221px;
+		align-items: center;
+	}
+
+	.event-birthday__images-wrp {
+		margin: 0;
+		max-width: 121px;
+		height: 121px;
+		position: absolute;
+		top: 104px;
+		right: 0;
+	}
+
+	.event-birthday__images-wrp .event-birthday__image:nth-child(1) {}
+
+	.event-birthday__images-wrp .event-birthday__image:nth-child(2) {
+		display: none;
+	}
+
+	.event-birthday__form .form__input:last-of-type {
+		margin-bottom: 14px !important;
+	}
+}
