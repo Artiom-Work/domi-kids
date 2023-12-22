@@ -1,3 +1,7 @@
+.contacts.center {
+	padding: 0 18px 50px 54px;
+}
+
 .contacts {
 	position: relative;
 	display: flex;
@@ -18,10 +22,6 @@
 	z-index: -1;
 }
 
-.contacts.center {
-	padding: 0 18px 50px 54px;
-	box-sizing: border-box;
-}
 
 .contacts.center,
 .footer__map {
@@ -104,17 +104,133 @@
 }
 
 .footer__info.center {
-	min-height: 72px;
-	padding: 30px 54px;
+	min-height: 117px;
+	padding: 33px 20px 11px 54px;
 	background: var(--background-color-3);
 }
 
 .footer__info-list {
+	max-width: 1206px;
+	width: 100%;
+	min-height: 73px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	column-gap: 84px;
+	row-gap: 28px;
+}
+
+.footer__info-item {
 	display: flex;
 	align-items: center;
-	gap: 83px;
+}
+
+.footer__info-item_copyright {
+	line-height: 30px;
 }
 
 .footer__info-item:nth-child(2) {
-	flex-grow: 2;
+	flex-basis: 70%;
+}
+
+.footer__info-item:nth-child(3) {
+	flex-grow: 1;
+	flex-shrink: 1;
+}
+
+.who-made-info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 167px;
+	width: 100%;
+	height: 31px;
+	text-decoration: none;
+	text-align: center;
+	gap: 7px;
+}
+
+.footer__info-image {
+	width: 110px;
+	height: 31px;
+}
+
+@media (max-width:1000px) {
+	.contacts.center {
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	.footer__info-item:nth-child(2) {
+		flex-basis: 60%;
+	}
+}
+
+@media (max-width:768px) {
+	.contacts.center {
+		padding: 0 21px 27px 23px;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 0;
+	}
+
+	.contacts__title-wrp {
+
+		padding-bottom: 2px;
+	}
+
+	.contacts__adress {
+		margin: -9px 0 0 0;
+	}
+
+	.contacts__phone.phone {
+		position: relative;
+		left: -3px;
+		margin: 0 0 19px 0;
+	}
+
+	.contacts__phone,
+	.contacts__phone .phone__link {
+		max-width: 210px;
+	}
+
+	.contacts__phone .phone__link>.double-color {
+		width: 210px;
+	}
+
+	.contacts__phone .phone__link .double-color__text {
+		font-size: 26px;
+		line-height: 24px;
+	}
+
+	.footer__map,
+	.footer__map .map {
+		min-height: 265px;
+	}
+
+	.footer__info.center {
+		padding: 29px 20px 11px 23px;
+	}
+
+	.footer__info-list {
+		column-gap: 5px;
+		row-gap: 0;
+		justify-content: space-between;
+	}
+
+	.footer__info-item:nth-child(1) {
+		flex-basis: 100%;
+		margin-bottom: 14px;
+	}
+
+	.footer__info-item:nth-child(2) {
+		flex-basis: 100%;
+		margin-bottom: 30px;
+	}
+
+	.footer__info-item:nth-child(3) {
+		flex-grow: 0;
+	}
 }
