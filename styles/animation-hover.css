@@ -1,0 +1,74 @@
+@media(hover:hover) {
+	a:hover {
+		display: inline-block;
+		transform: scale(1.1);
+	}
+
+	a:active {
+		filter: brightness(60%);
+		transform: scale(.9);
+	}
+
+	.how-to-find-link:hover span,
+	.menu-link:hover,
+	.footer__info-link:hover {
+		text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.41);
+	}
+
+	.phone__link:hover {
+		display: block;
+		transform: scale(1.1);
+	}
+
+	.phone__link:active {
+		transform: scale(.9);
+		filter: brightness(60%);
+	}
+
+	.social__link:hover,
+	.mobile-menu__burger:hover,
+	.mobile-menu__box-close:hover,
+	.button:hover {
+		-webkit-box-shadow: 1px 1px 29px 1px rgba(34, 60, 80, 0.35);
+		-moz-box-shadow: 1px 1px 29px 1px rgba(34, 60, 80, 0.35);
+		box-shadow: 1px 1px 29px 1px rgba(34, 60, 80, 0.35);
+	}
+
+	.button:hover {
+		transform: scale(1.1);
+	}
+
+	.button:active {
+		transform: scale(.9);
+		filter: brightness(60%);
+	}
+
+	.mobile-menu__burger:active,
+	.mobile-menu__box-close:active {
+		transform: scale(.9);
+	}
+
+	.switch-btn:hover img {
+		transform: scale(1.1);
+		-webkit-box-shadow: 1px 1px 29px 1px rgba(34, 60, 80, 0.35);
+		-moz-box-shadow: 1px 1px 29px 1px rgba(34, 60, 80, 0.35);
+		box-shadow: 1px 1px 29px 1px rgba(34, 60, 80, 0.35);
+	}
+
+	.switch-btn:active img {
+		transform: scale(.9);
+		filter: brightness(60%);
+	}
+
+	.slider-link:hover {
+		transform: scale(.9);
+	}
+
+	.studio-services__list-item:hover {
+		transform: scale(1.1);
+	}
+
+	.who-made-info:hover {
+		display: flex;
+	}
+}

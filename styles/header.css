@@ -36,13 +36,19 @@
 	height: 66px;
 }
 
+.logo__link {
+	transition: all .4s ease;
+}
+
 .info__how-to-find {
 	max-width: 158px;
 	width: 100%;
 }
 
-.how-to-find-link {
+.how-to-find-link,
+.how-to-find-link span {
 	text-decoration: none;
+	transition: all .4s ease;
 }
 
 .info__phone {
