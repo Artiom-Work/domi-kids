@@ -57,5 +57,6 @@ function switchPrevSlide() {
 }
 
 function createRollSlider() {
-	sliderLine.style.transform = `translateX(${-sliderCount * sliderWidth}px)`;
+	const scrollOfWindow = window.innerWidth - document.querySelector('.wrapper').offsetWidth;
+	sliderLine.style.transform = `translateX(${-sliderCount * (sliderWidth + scrollOfWindow)}px`;
 }
