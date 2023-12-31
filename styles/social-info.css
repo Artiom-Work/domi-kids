@@ -5,6 +5,7 @@
 	min-height: 370px;
 	background: var(--background-color-8);
 	padding: 76px 50px 139px;
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	margin: 0 auto;
 }
@@ -38,8 +39,14 @@
 	max-width: 700px;
 	width: 100%;
 	min-height: 151px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
 	justify-content: space-between;
+	-webkit-box-align: end;
+	-ms-flex-align: end;
 	align-items: flex-end;
 	gap: 10px;
 }
@@ -119,9 +126,14 @@
 	}
 
 	.social-info-inner {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
 		flex-direction: column;
 		max-width: 305px;
 		min-height: 274px;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
 		align-items: center;
 	}
 
@@ -136,6 +148,5 @@
 
 	.social-info__button {
 		position: relative;
-
 	}
 }

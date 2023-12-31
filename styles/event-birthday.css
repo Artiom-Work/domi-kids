@@ -1,6 +1,7 @@
 .event-birthday.center {
 	min-height: 544px;
 	padding: 60px 50px 57px;
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	border-radius: 30px;
 	background: url(../images/background-bables.png) no-repeat center/ cover;
@@ -9,8 +10,14 @@
 .event-birthday__container {
 	max-width: 1016px;
 	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
 	justify-content: space-between;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 	gap: 18px;
 }
@@ -18,8 +25,14 @@
 .event-birthday__info {
 	max-width: 643px;
 	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
 	justify-content: space-between;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
 	align-items: flex-start;
 }
 
@@ -88,7 +101,6 @@
 	bottom: 0;
 }
 
-/* =====form===== */
 .event-birthday__form-wrapper {
 	max-width: 311px;
 	width: 100%;
@@ -107,7 +119,6 @@
 	padding: 11px 70px 14px;
 }
 
-/* ========== */
 @media (max-width:1000px) {
 	.event-birthday.center {
 		min-height: 707px;
@@ -116,14 +127,21 @@
 
 	.event-birthday__container {
 		max-width: 960px;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
 		justify-content: center;
+		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 		gap: 30px;
 	}
 
 	.event-birthday__info {
 		max-width: 700px;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
 		align-items: center;
 	}
 }
@@ -138,8 +156,13 @@
 		position: relative;
 		top: -22px;
 		left: -12px;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
 		justify-content: center;
+		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 		gap: 22px;
 	}
@@ -148,6 +171,8 @@
 		position: relative;
 		max-width: 305px;
 		min-height: 221px;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
 		align-items: center;
 	}
 
@@ -159,8 +184,6 @@
 		top: 104px;
 		right: 0;
 	}
-
-	.event-birthday__images-wrp .event-birthday__image:nth-child(1) {}
 
 	.event-birthday__images-wrp .event-birthday__image:nth-child(2) {
 		display: none;

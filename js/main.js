@@ -1,3 +1,15 @@
+const mobileMenuBlock = document.querySelector('.mobile-menu');
+const mobileMenuLinks = mobileMenuBlock.querySelectorAll('.menu-link');
+
+mobileMenuLinks.forEach(element => {
+	const mobileMenuLink = element;
+	mobileMenuLink.addEventListener('click', function (e) {
+		if (document.getElementById('menu-switch').checked === true) {
+			document.getElementById('menu-switch').checked = false;
+		}
+	});
+});
+
 // validation event-birthday form
 const childAge = document.getElementById('child-age');
 const childGender = document.getElementById('child-gender');
