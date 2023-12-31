@@ -1,15 +1,24 @@
 const mobileMenuBlock = document.querySelector('.mobile-menu');
 const mobileMenuLinks = mobileMenuBlock.querySelectorAll('.menu-link');
+const pageOpasity = document.querySelector('.mobile-menu__opasity-block');
 
+pageOpasity.addEventListener('click', function (e) {
+	if (document.getElementById('menu-switch').checked === true) {
+		offChecbox();
+	}
+});
 mobileMenuLinks.forEach(element => {
 	const mobileMenuLink = element;
 	mobileMenuLink.addEventListener('click', function (e) {
 		if (document.getElementById('menu-switch').checked === true) {
-			document.getElementById('menu-switch').checked = false;
+			offChecbox();
 		}
 	});
 });
+function offChecbox() {
+	document.getElementById('menu-switch').checked = false;
 
+}
 // validation event-birthday form
 const childAge = document.getElementById('child-age');
 const childGender = document.getElementById('child-gender');

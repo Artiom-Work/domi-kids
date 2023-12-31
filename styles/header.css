@@ -162,6 +162,7 @@
 	position: absolute;
 	right: 0;
 	top: 15px;
+	max-width: 228px;
 	width: 100%;
 	min-height: 404px;
 	background-color: transparent;
