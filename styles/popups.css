@@ -124,7 +124,9 @@
 }
 
 .popup__button {
-	padding: 0 0 4px 0;
+	max-width: 258px;
+	width: 100%;
+	min-height: 70px;
 }
 
 .popup__social-wrapper {

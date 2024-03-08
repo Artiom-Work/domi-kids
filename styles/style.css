@@ -49,11 +49,6 @@ input:focus {
 	visibility: hidden;
 }
 
-.button {
-	text-decoration: none;
-	display: block;
-}
-
 .center {
 	max-width: 1280px;
 	width: 100%;
@@ -76,16 +71,22 @@ input:focus {
 	paint-order: stroke fill;
 }
 
+.button-wrapper {
+	margin: 0 auto;
+	max-width: 258px;
+	width: 100%;
+	min-height: 70px;
+}
+
 .button {
 	display: block;
+	text-decoration: none;
 	font-family: var(--title-font-family-1), sans-serif;
 	font-size: 20px;
 	color: var(--text-color-2);
 	text-align: center;
 	background-color: var(--background-color-button-1);
 	border-radius: 100px;
-	width: 258px;
-	height: 70px;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	cursor: pointer;

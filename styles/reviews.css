@@ -80,6 +80,10 @@
 	align-items: flex-start;
 }
 
+.reviews__item {
+	display: block;
+}
+
 .reviews__item:nth-child(1) .reviews__card {
 	margin: 56px -37px 0 0;
 }
